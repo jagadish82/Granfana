@@ -21,7 +21,7 @@ stages{
 
     stage("prometheus"){
         steps{
-            sh "docker run -d -p 9090:9090 --name prometheus -v /home/ubuntu/prometheus.yml:/etc/prometheus/prometheus.yml jagadish69/prometheus"
+            sh "docker run -d -p 9090:9090 --name prometheus -v /home/oracle/prometheus.yml:/etc/prometheus/prometheus.yml jagadish69/prometheus"
             }
         }
 
