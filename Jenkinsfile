@@ -7,7 +7,7 @@ environment{
 }
 
 stages{
-    stage("checkout repo"){
+    stage("git checkout"){
         steps{
             git branch: 'master', 
             url: 'https://github.com/jagadish82/Granfana.git' }
