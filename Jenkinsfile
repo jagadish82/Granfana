@@ -1,10 +1,6 @@
 pipeline {
     agent any
-
-environment{
-    prometheus = credentials('prometheus')
-}
-
+    
 stages{
     stage("git checkout"){
         steps{
